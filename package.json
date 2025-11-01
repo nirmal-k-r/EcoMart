@@ -1,0 +1,28 @@
+{
+  "name": "ecomart",
+  "version": "1.0.0",
+  "description": "Market web app for eco products",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirmal-k-r/EcoMart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nirmal-k-r/EcoMart/issues"
+  },
+  "homepage": "https://github.com/nirmal-k-r/EcoMart#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mongoose": "^8.19.1",
+    "nodemon": "^3.1.10"
+  }
+}

@@ -1,0 +1,28 @@
+<%- include('../partials/header') %>
+
+<section>
+    <div class="container mt-4">
+        <div class="alert alert-primary text-center" role="alert">
+            Login to EcoMart!
+        </div>
+
+
+        <form id="loginForm" action="/auth/login" method="POST">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="Login">
+            <a href="/auth/register" class="btn btn-link">Don't have an account? Register</a>
+        </form>
+
+    </div>
+</section>
+
+    
+<%- include('../partials/footer') %>

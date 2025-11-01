@@ -1,0 +1,33 @@
+<%- include('../partials/header') %>
+
+<section>
+    <div class="container mt-4">
+        <div class="alert alert-primary text-center" role="alert">
+            Welcome to EcoMart!
+        </div>
+        
+        <div class="row" id='productRenderingSpace'>   
+            <% products.forEach((product) => { %>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top product-thumb" src="data:image/png;base64,<%= product.image %>" alt="<%= product.name %>">
+
+                        <div class="card-body text-center">
+                            <h5 class="card-title product-title"><%= product.name %></h5>
+                            <p class="text-muted">Rs <%= product.price %></p>
+                            <button class="btn btn-primary">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+
+
+        </div>
+
+
+
+    </div>
+</section>
+
+    
+<%- include('../partials/footer') %>

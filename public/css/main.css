@@ -1,0 +1,21 @@
+/* body {
+    background-color: blue !important; 
+ } */
+
+ /* Put in your stylesheet */
+.product-thumb{
+  width: 100%;              /* span card width */
+  height: 220px;            /* choose a consistent height */
+  object-fit: cover;        /* crop to fill box without distortion */
+  object-position: center;  /* centre the crop */
+  display: block;           /* avoid inline-gap issues */
+  border-top-left-radius: inherit;   /* keep Bootstrap card rounding consistent */
+  border-top-right-radius: inherit;
+  padding: 20px;
+}
+
+/* Optional: lock aspect ratio instead of a fixed height (modern browsers) */
+.product-thumb.ar-4-3{
+  aspect-ratio: 4 / 3;      /* choose 1/1, 4/3, 16/9, etc. */
+  height: auto;
+}
